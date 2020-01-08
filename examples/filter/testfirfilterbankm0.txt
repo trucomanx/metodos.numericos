@@ -1,0 +1,5 @@
+<h2>firfilterbank() function</h2>
+
+This function made a filtering in a signal DATA, separating this in four 
+frequency bands represented in the signals DATA1, DATA01, DATA001 and DATA000.
+Later, the graphic AVD method is calculated and the results are showed.

@@ -1,0 +1,5 @@
+<h2>firfilterbank(), firsynthesisbank(), firsynthesispath() functions</h2>
+
+This function decompound a signal DATA in coeficients DATA00, DATA01, ATA10 and DATA11.
+Later, this coeficients are assembled in a signal DATA_ and in the signals
+DATA00_, DATA01_, ATA10_ and DATA11_; each one in a particular frequency band.

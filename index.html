@@ -1,66 +1,171 @@
 <html>
 <head>
-	<title> ..:: Fernando Pujaico Rivera ::..</title>
-	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  	<link href="css/base.css" media="screen" rel="stylesheet" type="text/css">
-	<meta http-equiv="X-UA-Compatible" content="chrome=1">
-	<script language="javascript" type="text/javascript">
+	<title> ..:: Bio-Speckle Laser Tool Library ::..</title>
+	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  	<link href="data/base.css" media="screen" rel="stylesheet" type="text/css">
+	 <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <script type="text/javascript">
+
 	if(navigator.appName=='Microsoft Internet Explorer')
 	{
-		var str1=	'El navegador que usas no respeta los estándares\n'+
-				'de diseño web, muy probablemente estés usando\n'+
+		var str1=	'El navegador que usas no respeta los est�ndares\n'+
+				'de dise�o web, muy probablemente est�s usando\n'+
 				'Internet Explorer, por favor descarga un navegador\n'+
 				'web adecuado, como:\n'+
 				'Firefox, Chromium, Opera, etc.'
 		alert(str1);
 	}
-	</script>
+    </script>
 
+
+    <script src="jquery-rss-gh-pages/lib/jquery-1.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+    <script src="jquery-rss-gh-pages/src/jquery.rss.js"></script>
+    <script>
+    jQuery(function($) {
+      $("#rss-feeds").rss("https://savannah.nongnu.org/news/atom.php?group=bsltl",
+      {
+        limit: 3,
+        dateFormat: 'YYYY-MM-DD',
+        entryTemplate:'<li>{date}:<a href="{url}"> {title}</a><br/>{shortBodyPlain}</li>'
+      })
+    })
+    </script>
 </head>
 <body>
-
+<!----------------------------------------------------------------------------->
+<!----------------------------------------------------------------------------->
 	<div class="header gradient">
 		<div class="top-nav darkblock">
-			<a href="index.html">Home</a> |
-            <a href="autor.html">Autor</a> |
-			<a href="https://trucomanx.wordpress.com/" target="_blank">Blog</a> |
-			<a href="mailto:fpujaico@decom.fee.unicamp.br">Email</a>
+        	<a href="index.html">Home</a> |
+        	<a href="documentation.html">Documentation</a> |
+        	<a href="overview.html">Overview</a> |
+        	<a href="examples.html">Examples</a> |
+        	<a href="code.html" target="_blank">Code</a> |
+        	<a href="download.html" target="_blank">Download</a> |
+            <a href="tools/tools.html">Tools</a> |
+        	<a href="https://savannah.nongnu.org/projects/bsltl/" target="_blank">Develop</a>
 		</div>
 
-		<div class="promo-area">
-			<p><br></p>
+		<img src="imagenes/logo-text-bsltl.png" height="48">
 
-			<a href="index.html" target="_blank"><img alt=" " src="imagenes/cover-tiny-2.png" style="float: left ;height: 600px;"></a>
+		<div class="promo-area"> 
+			<div class="button">
+				<img  src="imagenes/portada.png" width="60%"  border="0" />
+				<div style="float: right; width: 37.0%;">
+					<h2>Bio-Speckle Laser Tool Library</h2>
+        			<p>The <b>Bio-Speckle Laser</b> (BSL) phenomenon can be studied by means of many techniques. 
+					In this sense, here it is presented the 
+					<b>BSL Tool Library</b> <a href="http://www.nongnu.org/bsltl/">(BSLTL)</a>
+					as a free software solution to digital image processing of speckle pattern images.
+					The library is written in the code style and syntax of 
+					<a href="http://www.gnu.org/software/octave/" target="_blank">OCTAVE</a> and MATLAB.</p> 
+				</div>
+			</div>
+			<br>
+			<div>
+	        	<div style="float: right; width: 30.0%;">
+					<div style="float: left"><br><b>News:</b></div>
+					<div class="darkblock button" style="width: 100.0%;">
+						<div id="rss-feeds"></div>
+					</div>
+					<br>
+					<div style="float: left"><br><b>Octave online installing:</b></div>
+					<br>
+					<div class="darkblock button" style="width: 100.0%;">pkg install -forge bsltl<br>pkg load bsltl</div>				
+				</div>
+                <div style="float: left"><br><b>The BSLTL offers:</b></div>
+				<div class="contentinlineX" style="float: left; width: 65.0%;">
+					<ul>
+                        <li>A modular way of working, using a structured programming style.</li>
+						<li>Functions to load a package from a set of images.</li>
+						<li>Functions to deal with many time history speckle patterns.</li>
+						<li>Functions implementing many numerical biospeckle indexes. For example: inertia moment, avd, etc.</li>
+						<li>Functions implementing many graphical biospeckle indexes. For example: Fujii, generalized differences, standard deviation, etc.</li>
+                        <li>Functions for frequency filtering of datapacks.</li>
+						<li>Functions to quality test of a collection of images.</li>
+					</ul>
+				</div>
+			</div>
 
-			<h1>Métodos numéricos: Problemas não lineares e inversos</h1>
-		    <p>Este livro é uma coletânea de procedimentos relativos à solução de alguns problemas
-		    não lineares e inversos, que tem aparecido de forma recorrente durante a minha vida profissional,
-		    em temas relativos ao processamento digital de sinais, álgebra matricial e cálculo.</p>
-		
 		</div>
 	</div>
 
-	<div class="content">
-      
-      <div class="box">
-        <h3>Segue-me</h3>
-        <div class="box-content">
-           <ul class="services">
-            <li><a href="https://diasp.org/u/trucomanx" target="_blank"><img src="imagenes/diaspora+logo.png" height="22">Diaspora</a></li>
-            <li><a href="https://gnusocial.net/trucomanx" target="_blank"><img src="imagenes/gnusocial.png" height="22">Gnusocial</a></li>
-          </ul>
-        </div>
-      </div>      
+<!----------------------------------------------------------------------------->
+	<div class="contentinline gradient2">
+		<div class="promo-area"> 
+			<a href="documentation.html#books" target="_blank" ><img src="imagenes/books-42701.png" height="180" style="float: left; margin-right: 10px;" ></a>
+			<b>Books relatives to BSLTL package and the Biospeckle phenomenon.</b>
+		</div>
+	</div>
+
+	<div class="contentinline gradient2">
+		<div class="promo-area"> 
+			<a href="documentation.html#refmans" target="_blank" ><img src="imagenes/refman.png" height="180" style="float: left; margin-right: 10px;" ></a>
+			<b>Reference manuals of the BSLTL package.</b>
+		</div>
+	</div>
        
-      <div class="box">
-        <h3>Novidades</h3>
-        <div id="news-content" class="box-content">
-          <ul class="services">
-            <li><a href="https://trucomanx.wordpress.com/rss" target="_blank"><img src="imagenes/application-rss+xml.png">RSS do meu blog</a></li>
-          </ul>
-        </div>
-      </div>
+	<div class="contentinline gradient2">
+		<div class="promo-area"> 
+			<a href="documentation.html#tutorials" target="_blank" ><img src="imagenes/tutorial.png" height="180" style="float: left; margin-right: 10px;" ></a>
+			<b>Tutorials about the BSLTL package and topics relatives to the Biospeckle phenomenon.</b>
+		</div>
+	</div>
 
-    </div>
+<!----------------------------------------------------------------------------->
+	<div class="content gradient">
+		<div class="promo-area"> 
+			<h2>Download Free Biospeckle Images</h2>
+			<p>You can download here free samples of biospeckle images. The pictures represent the result of apply
+			a graphical biopeckle index over the biospeckle images.</p>
+		</div>
+		<div class="promo-area"> 
+			<a href="http://repositorio.ufla.br/jspui/handle/1/10560" target="_blank"><img src="imagenes/MilhoDG.png" height="240"></a>
+			<a href="http://repositorio.ufla.br/jspui/handle/1/10619" target="_blank"><img src="imagenes/testmwindowingc.png" height="240"></a>
+		</div>
+		<br>
+	</div>
 
-  </body></html>
+<!----------------------------------------------------------------------------->
+	<div class="content">
+
+		<div class="box">
+			<h3>Contact us</h3>
+			<div class="box-content">
+				<ul>
+            		<li><a href="mailing.html" target="_blank"><img src="imagenes/mail.png">Mailing list</a></li>
+				</ul>
+			</div> 
+		</div>
+		<div class="box">
+			<h3>Bug reports</h3>
+			<div class="box-content">
+				<ul>
+            		<li><a href="bugs.html" target="_blank"><img src="imagenes/bug.png">Submit bug</a></li>
+				</ul>
+			</div> 
+		</div>
+
+		<div class="box">
+			<h3>Follow us</h3>
+			<div class="box-content">
+				<ul class="services">
+            		<li><a href="https://savannah.nongnu.org/news/atom.php?group=bsltl" target="_blank"><img src="imagenes/feed.png">RSS</a></li>
+					<!-- <li><a href="http://gnusocial.net/trucomanx"><img src="imagenes/GNU-Social2.png">Gnusocial</a></li> -->
+				</ul>
+			</div>
+		</div>      
+       
+		<div class="box">
+			<h3>Others</h3>
+			<div class="box-content">
+				<ul>
+            		<li><a href="http://www.gnu.org/software/octave/" target="_blank">Octave</a></li>
+				</ul>
+			</div> 
+		</div>
+	</div>
+
+</body>
+</html>
