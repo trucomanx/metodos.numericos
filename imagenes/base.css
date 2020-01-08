@@ -1,0 +1,148 @@
+body {
+  font-family: bitstream vera sans, dejavu sans, verdana, sans-serif;
+  background: #000000;
+  font-size: 10pt;
+  color: #FFFFFF;
+}
+
+.gradient {
+  background: #442211; background: #442211 -webkit-gradient(linear, left top, left 150%, from(#442211), to(#100000));
+}
+
+.gradient2 {
+  background: #65000D; background: #65000D -webkit-gradient(linear, left top, left 150%, from(#65000D), to(#100000));
+}
+
+.round {
+  border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px;
+}
+
+.darkblock {
+  border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px;
+  background: #3B6214; background: #3B6214 -webkit-gradient(linear, left top, left 280%, from(#3B6214), to(#6B9244));
+  color: white;
+}
+
+.header {
+  border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+.top-nav {
+  float: right;
+  font-weight: bold;
+  padding: 8px;
+  margin: 5px;
+}
+
+.top-nav a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 5px black;
+  padding: 8px;
+}
+
+/*
+.top-nav .selected {
+  border-radius: 10;
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+} */
+
+.promo-area {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.promo-area p {
+  font-size: 12pt;
+  text-align: justify;
+}
+
+.promo-area img {
+  /*margin-left: 40px;*/
+  margin-right: 40px;
+}
+
+.promo-area h2 {
+  letter-spacing: 2px;
+  color: #3B6214;
+}
+
+.button {
+  padding: 10px;
+  padding-right: 15px;
+  display: inline-block;
+}
+
+.button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  text-shadow: 1px 1px 5px black;
+}
+
+.button img {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.content {
+  padding: 15px;
+}
+
+.content .box {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+}
+
+.box .services {
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0px;
+  margin: 0px;
+  padding-left: 10px;
+}
+
+.box .services img {
+  margin-right: 5px;
+  vertical-align: bottom;
+}
+
+.box .services li {
+  padding: 2px;
+}
+
+.box h3 {
+  border-bottom: 1px solid #777777;
+}
+
+.text p {
+  text-align: justify;
+}
+
+.text {
+  width: 80%;
+  padding-left: 10%;
+}
+
+.text h3 {
+  border-bottom: 1px solid #777777;
+}
+
+a img {
+  border: 0px;
+}
+
+.text a {
+  text-decoration: none;
+}
