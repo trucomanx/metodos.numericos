@@ -1,9 +1,9 @@
 <html>
 <head>
-	<title> ..:: Bio-Speckle Laser Tool Library ::..</title>
+	<title> ..:: Métodos numéricos ::..</title>
 	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
   	<link href="data/base.css" media="screen" rel="stylesheet" type="text/css">
-	 <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <script type="text/javascript">
 
 	if(navigator.appName=='Microsoft Internet Explorer')
@@ -26,7 +26,7 @@
     jQuery(function($) {
       $("#rss-feeds").rss("https://savannah.nongnu.org/news/atom.php?group=bsltl",
       {
-        limit: 3,
+        limit: 4,
         dateFormat: 'YYYY-MM-DD',
         entryTemplate:'<li>{date}:<a href="{url}"> {title}</a><br/>{shortBodyPlain}</li>'
       })
@@ -36,7 +36,13 @@
 
     <script> 
     $(function(){
-      $("#includedContent").load("head.html"); 
+      $("#includedHeadContent").load("head.html"); 
+    });
+    </script> 
+
+    <script> 
+    $(function(){
+      $("#includedFootContent").load("foot.html"); 
     });
     </script> 
 
@@ -46,53 +52,65 @@
 <!----------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------->
 	<div class="header gradient">
-		<div id="includedContent" class="top-nav darkblock"> </div>
+		<div id="includedHeadContent" class="top-nav darkblock"> </div>
 
 		<img src="imagenes/logo-text-bsltl.png" height="48">
 
 		<div class="promo-area"> 
-			<div class="button">
-				<img  src="imagenes/portada.png" width="60%"  border="0" />
-				<div style="float: right; width: 37.0%;">
-					<h2>Bio-Speckle Laser Tool Library</h2>
-        			<p>The <b>Bio-Speckle Laser</b> (BSL) phenomenon can be studied by means of many techniques. 
-					In this sense, here it is presented the 
-					<b>BSL Tool Library</b> <a href="http://www.nongnu.org/bsltl/">(BSLTL)</a>
-					as a free software solution to digital image processing of speckle pattern images.
-					The library is written in the code style and syntax of 
-					<a href="http://www.gnu.org/software/octave/" target="_blank">OCTAVE</a> and MATLAB.</p> 
+            <center>
+			<div class="button"style="width: 65.0%;">
+				<div style="float: left; width: 50.0%;">
+                    <center><img  src="img/cover-tiny-2.png" width="90%"  border="0" /></center>
+                </div>
+				<div style="float: right; width: 50.0%;">
+					<h1>Métodos numéricos: Problemas não lineares e inversos</h1>
+        			<p>Este livro é uma coletânea de procedimentos relativos à solução de alguns problemas
+		    não lineares e inversos, que tem aparecido na minha vida profissional de forma muito recorrente.
+		    Os temas tratados são relativos ao processamento digital de sinais, ao álgebra matricial e ao cálculo numérico.
+            O livro não tenta ser uma obra final e sim um principio; sendo assim,
+            este pode ser considerado como a versão 1.0 da minha caixa de ferramentas matemáticas para a pesquisa.</p> 
 				</div>
 			</div>
+            </center>
 			<br>
+		</div>
+	</div>
+<!----------------------------------------------------------------------------->
+<br>
+<!----------------------------------------------------------------------------->
+	<div class="header gradient">
+		<div class="promo-area"> 
 			<div>
-	        	<div style="float: right; width: 30.0%;">
-					<div style="float: left"><br><b>News:</b></div>
+	        	<div style="float: left; width: 60.0%;">
+                    <div style="float: left"><h2>Lista de capítulos:</h2></div>
+				    <div class="contentinlineX" style="float: left; width: 100.0%;">
+					    <ul>
+                            <li>Notações e termos.</li>
+						    <li>Teoria básica sobre matrizes.</li>
+						    <li>Funções e operadores notáveis.</li>
+						    <li>Derivada de funções de variável vetorial.</li>
+						    <li>Solução exata de equações diferenciais matriciais.</li>
+                            <li>Solução iterativa de equações diferenciais matriciais.</li>
+						    <li>Minimização do erro em funções vetoriais de variável vetorial.</li>
+                            <li>Minimização do erro em funções reais de variável real.</li>
+                            <li>Raízes de funções reais.</li>
+                            <li>Regressão não linear - Funções de mapeamento.</li>
+					    </ul>
+				    </div>
+				</div>
+	        	<div style="float: right; width: 35.0%;">
+					<div style="float: left"><h2>News:</h2></div>
 					<div class="darkblock button" style="width: 100.0%;">
 						<div id="rss-feeds"></div>
-					</div>
-					<br>
-					<div style="float: left"><br><b>Octave online installing:</b></div>
-					<br>
-					<div class="darkblock button" style="width: 100.0%;">pkg install -forge bsltl<br>pkg load bsltl</div>				
-				</div>
-                <div style="float: left"><br><b>The BSLTL offers:</b></div>
-				<div class="contentinlineX" style="float: left; width: 65.0%;">
-					<ul>
-                        <li>A modular way of working, using a structured programming style.</li>
-						<li>Functions to load a package from a set of images.</li>
-						<li>Functions to deal with many time history speckle patterns.</li>
-						<li>Functions implementing many numerical biospeckle indexes. For example: inertia moment, avd, etc.</li>
-						<li>Functions implementing many graphical biospeckle indexes. For example: Fujii, generalized differences, standard deviation, etc.</li>
-                        <li>Functions for frequency filtering of datapacks.</li>
-						<li>Functions to quality test of a collection of images.</li>
-					</ul>
+					</div>			
 				</div>
 			</div>
-
 		</div>
+
 	</div>
 
 <!----------------------------------------------------------------------------->
+<center>
 	<div class="contentinline gradient2">
 		<div class="promo-area"> 
 			<a href="documentation.html#books" target="_blank" ><img src="imagenes/books-42701.png" height="180" style="float: left; margin-right: 10px;" ></a>
@@ -113,60 +131,10 @@
 			<b>Tutorials about the BSLTL package and topics relatives to the Biospeckle phenomenon.</b>
 		</div>
 	</div>
+</center>
 
 <!----------------------------------------------------------------------------->
-	<div class="content gradient">
-		<div class="promo-area"> 
-			<h2>Download Free Biospeckle Images</h2>
-			<p>You can download here free samples of biospeckle images. The pictures represent the result of apply
-			a graphical biopeckle index over the biospeckle images.</p>
-		</div>
-		<div class="promo-area"> 
-			<a href="http://repositorio.ufla.br/jspui/handle/1/10560" target="_blank"><img src="imagenes/MilhoDG.png" height="240"></a>
-			<a href="http://repositorio.ufla.br/jspui/handle/1/10619" target="_blank"><img src="imagenes/testmwindowingc.png" height="240"></a>
-		</div>
-		<br>
-	</div>
-
-<!----------------------------------------------------------------------------->
-	<div class="content">
-
-		<div class="box">
-			<h3>Contact us</h3>
-			<div class="box-content">
-				<ul>
-            		<li><a href="mailing.html" target="_blank"><img src="imagenes/mail.png">Mailing list</a></li>
-				</ul>
-			</div> 
-		</div>
-		<div class="box">
-			<h3>Bug reports</h3>
-			<div class="box-content">
-				<ul>
-            		<li><a href="bugs.html" target="_blank"><img src="imagenes/bug.png">Submit bug</a></li>
-				</ul>
-			</div> 
-		</div>
-
-		<div class="box">
-			<h3>Follow us</h3>
-			<div class="box-content">
-				<ul class="services">
-            		<li><a href="https://savannah.nongnu.org/news/atom.php?group=bsltl" target="_blank"><img src="imagenes/feed.png">RSS</a></li>
-					<!-- <li><a href="http://gnusocial.net/trucomanx"><img src="imagenes/GNU-Social2.png">Gnusocial</a></li> -->
-				</ul>
-			</div>
-		</div>      
-       
-		<div class="box">
-			<h3>Others</h3>
-			<div class="box-content">
-				<ul>
-            		<li><a href="http://www.gnu.org/software/octave/" target="_blank">Octave</a></li>
-				</ul>
-			</div> 
-		</div>
-	</div>
+	<div id="includedFootContent" class="content">	</div>
 
 </body>
 </html>
