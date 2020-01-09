@@ -18,7 +18,8 @@
     </script>
 
 
-    <script src="jquery-rss-gh-pages/lib/jquery-1.6.4.min.js"></script>
+    <!--  <script src="jquery-rss-gh-pages/lib/jquery-1.6.4.min.js"></script>   -->
+    <script src="data/jquery-3.4.1.min.js"></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
     <script src="jquery-rss-gh-pages/src/jquery.rss.js"></script>
     <script>
@@ -31,21 +32,20 @@
       })
     })
     </script>
+
+    
+    <script> 
+    $(function(){
+      $("#includedContent").load("head.html"); 
+    });
+    </script> 
+
 </head>
 <body>
 <!----------------------------------------------------------------------------->
 <!----------------------------------------------------------------------------->
 	<div class="header gradient">
-		<div class="top-nav darkblock">
-        	<a href="index.html">Home</a> |
-        	<a href="documentation.html">Documentation</a> |
-        	<a href="overview.html">Overview</a> |
-        	<a href="examples.html">Examples</a> |
-        	<a href="code.html" target="_blank">Code</a> |
-        	<a href="download.html" target="_blank">Download</a> |
-            <a href="tools/tools.html">Tools</a> |
-        	<a href="https://savannah.nongnu.org/projects/bsltl/" target="_blank">Develop</a>
-		</div>
+		<div id="includedContent" class="top-nav darkblock"> </div>
 
 		<img src="imagenes/logo-text-bsltl.png" height="48">
 
