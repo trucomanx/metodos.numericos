@@ -1,5 +1,0 @@
-<h2>datapack_conv() function</h2>
-
-This function calculates the graphic avd method of 3 signals 
-DATA0, DATA1 and DATA2, obtained applying the wavelet technique 
-using Morlet wavelets.

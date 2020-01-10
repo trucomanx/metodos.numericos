@@ -16,118 +16,56 @@
 		alert(str1);
 	}
     </script>
+
+    <script src="data/jquery-3.4.1.min.js"></script> 
+
+    <script> 
+    $(function(){
+      $("#includedHeadContent").load("head.html"); 
+    });
+    </script> 
+
+    <script> 
+    $(function(){
+      $("#includedFootContent").load("foot.html"); 
+    });
+    </script> 
+
 </head>
 <body>
 
 <!----------------------------------------------------------------------------->
 	<div class="header gradient">
-		<div class="top-nav darkblock">
-        	<a href="index.html">Home</a> |
-        	<a href="documentation.html">Documentation</a> |
-        	<a href="overview.html">Overview</a> |
-        	<a href="examples.html">Examples</a> |
-        	<a href="code.html" target="_blank">Code</a> |
-        	<a href="download.html" target="_blank">Download</a> |
-            <a href="tools/tools.html">Tools</a> |
-        	<a href="https://savannah.nongnu.org/projects/bsltl/" target="_blank">Develop</a>
-		</div>
+        <div id="includedHeadContent" class="top-nav darkblock"> </div>
 
-		<img src="imagenes/logo-text-bsltl.png" height="48">
+        <img src="img/logo.svg.png" height="64"> <br>
 
 		<div class="promo-area"> 
 			<a name="books"></a>
-			<h2>Books</h2>
+			<h2>Bibtex</h2>
         	<p>
 				<ul>
-				<li> BRAGA JÚNIOR, R. A.; RIVERA, F. P.; MOREIRA, J. <a href="http://repositorio.ufla.br/bitstream/1/12119/1/LIVRO_A_%20practical_%20guide_%20to_%20biospeckle_%20laser_%20analysis.pdf"> A practical guide to biospeckle laser analysis</a>: theory and software. Lavras: Ed. UFLA, 2016. 
+				<li> Download: 
+                    <a href="data/pujaico2020.bibtex">arquivo em formato bibtex</a>. 
 <pre>
- @book{BSLTLBOOK,
-    title={A practical guide to biospeckle laser analysis: theory and software},
-    author={Braga J\'unior, Roberto Alves and Pujaico Rivera, Fernando and Moreira, Junio},
-    isbn={978-85-8127-051-7},
-    url={http://repositorio.ufla.br/handle/1/12119},
-    year={2016},
-    publisher={Ed. UFLA}
+ @book{PUJAICO2020,
+    title={M\'etodos num\'ericos: Problemas n\~ao lineares e inversos},
+    author={Pujaico Rivera, Fernando},
+    isbn={XXX-XX-XXXX-XXX-X},
+    url={https://trucomanx.github.io/metodos.numericos/},
+    year={2020}
  }
 </pre>
                 </li>
 				</ul>
 			</p> 
 
-			<a name="refmans"></a>
-			<h2>Reference manuals</h2>
-        	<p>
-				<ul>
-				<li><a href="http://octave.sourceforge.net/bsltl/index.html" target="_blank">Reference manual of the last release of the BSLTL package. </a></</li>
-				<li>Part III in the book: <a href="http://repositorio.ufla.br/bitstream/1/12119/1/LIVRO_A_%20practical_%20guide_%20to_%20biospeckle_%20laser_%20analysis.pdf">A Practical Guide to Biospeckle Laser Analysis.</a></li>
-				</ul>
-			</p> 
-
-			<a name="tutorials"></a>
-			<h2>Tutorials</h2>
-        	<p>
-				<ul>
-				<li><a href="data/FernandoSlides1.pdf" target="_blank">Slide 1 of the course: dynamic speckle laser in biosystems - (FEAGRI/UNICAMP/2016).</a></li>
-				<li><a href="data/FernandoSlides2.pdf" target="_blank">Slide 2 of the course: dynamic speckle laser in biosystems - (FEAGRI/UNICAMP/2016).</a></li>
-				</ul>
-			</p>
-        	<p>
-				<ul>
-				<li>Part II in the book: <a href="http://repositorio.ufla.br/bitstream/1/12119/1/LIVRO_A_%20practical_%20guide_%20to_%20biospeckle_%20laser_%20analysis.pdf">A Practical Guide to Biospeckle Laser Analysis.</a></li>
-	           	<li><a href="overview.html#install" target="_blank">Mini-tutotial of the installation of BSLTL package in OCTAVE/MATLAB.</a></li>
-				</ul>
-			</p>
-
-			<a name="templates"></a>
-			<h2>Templates</h2>
-        	<p>
-				<ul>
-	           	<li><a href="http://trucomanx.github.io/BSLID-Report/" target="_blank">Template to data report of biospeckle laser images.</a></li>
-				</ul>
-			</p>
 
 		</div>
 	</div>
 
 <!----------------------------------------------------------------------------->
-	<div class="content">
-
-		<div class="box">
-			<h3>Contact us</h3>
-			<div class="box-content">
-				<ul>
-            		<li><a href="mailing.html" target="_blank"><img src="imagenes/mail.png">Mailing list</a></li>
-				</ul>
-			</div> 
-		</div>
-		<div class="box">
-			<h3>Bug reports</h3>
-			<div class="box-content">
-				<ul>
-            		<li><a href="bugs.html" target="_blank"><img src="imagenes/bug.png">Submit bug</a></li>
-				</ul>
-			</div> 
-		</div>
-
-		<div class="box">
-			<h3>Follow us</h3>
-			<div class="box-content">
-				<ul class="services">
-            		<li><a href="https://savannah.nongnu.org/news/atom.php?group=bsltl" target="_blank"><img src="imagenes/feed.png">RSS</a></li>
-					<!-- <li><a href="http://gnusocial.net/trucomanx"><img src="imagenes/GNU-Social2.png">Gnusocial</a></li> -->
-				</ul>
-			</div>
-		</div>      
-       
-		<div class="box">
-			<h3>Others</h3>
-			<div class="box-content">
-				<ul>
-            		<li><a href="http://www.gnu.org/software/octave/" target="_blank">Octave</a></li>
-				</ul>
-			</div> 
-		</div>
-	</div>
+    <div id="includedFootContent" class="content">    </div>
 
 </body>
 </html>

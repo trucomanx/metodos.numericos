@@ -1,4 +1,0 @@
-<h2>hbpmf() function</h2>
-
-This function returns the entropy <b>H</b> of a probability mass function <b>P</b>. 
-Additionally shows that the sum of probabilities is equal to <b>1.0</b>. 

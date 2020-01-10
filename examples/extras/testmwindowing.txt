@@ -1,7 +1,0 @@
-<h2>mwindowing() function</h2>
-
-
-This function divides the <b>GAVD</b> matrix in windows of <b>WLines</b> lines and  
-<b>WColumns</b> columns, then in each one of these windows it is calculated the 
-mean value of all elements.
-
