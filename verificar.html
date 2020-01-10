@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title> ..:: Bio-Speckle Laser Tool Library ::..</title>
+	<title> ..::  Métodos numéricos  ::..</title>
 	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
   	<link href="data/base.css" media="screen" rel="stylesheet" type="text/css">
 	 <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -39,27 +39,42 @@
         <div id="includedHeadContent" class="top-nav darkblock"> </div>
 
         <img src="img/logo.svg.png" height="64"> <br>
-
+	</div>
+<!----------------------------------------------------------------------------->
+<br>
+<!----------------------------------------------------------------------------->
+	<div class="header gradient">
 		<div class="promo-area"> 
-			<a name="books"></a>
-			<h2>Bibtex</h2>
-        	<p>
-				<ul>
-				<li> Download: 
-                    <a href="data/pujaico2020.bibtex">arquivo em formato bibtex</a>. 
+            <div style="float: left; width: 20.0%;">
+                <center><img  src="img/Gnulinux.png" style="width: 90.0%;"  border="0" /></center>
+            </div>
+            <div style="float: right;width: 80.0%;">
+			<h2>GNU-Linux: Verificar a integridade e autenticidade do livro</h2>
+        	    <p>Baixe o arquivo <a href="data/metodos.numericos-1raed.sig">metodos.numericos-1raed.sig</a>,
+                de modo que este arquivo esteja na mesma pasta que o livro -
+                <b>Métodos numéricos: Problemas não lineares e inversos</b>, em formato pdf.
+                Com estes dois arquivos entre ao terminal e se posicione nessa pasta;
+                neste ponto você pode usar o programa <b>gpg</b> para verificar a integridade do arquivo do livro em formato pdf.</p>
+                <p> Por exemplo, se o livro tem o nome <b>livro-metodos.numericos.pdf</b>,
+                então podemos verificar este arquivo pdf utilizando o seguinte comando:</p> 
 <pre>
- @book{PUJAICO2020,
-    title={M\'etodos num\'ericos: Problemas n\~ao lineares e inversos},
-    author={Pujaico Rivera, Fernando},
-    isbn={XXX-XX-XXXX-XXX-X},
-    url={https://trucomanx.github.io/metodos.numericos/},
-    year={2020}
- }
-</pre>
-                </li>
-				</ul>
-			</p> 
 
+ gpg --verify metodos.numericos-1raed.sig livro-metodos.numericos.pdf
+
+</pre>
+                <p>Se o arquivo foi verificado com exito, poderá observar uma mensagem similar a esta:</p> 
+<pre>
+
+ gpg: Assinatura correta de "Fernando Pujaico Rivera (TrucomanX) <fernando.pujaico.rivera@gmail.com>" [final]
+
+</pre>
+                <p>No caso contrário, observará algo similar a isto:</p> 
+<pre>
+
+ gpg: Assinatura ERRADA de "Fernando Pujaico Rivera (TrucomanX) <fernando.pujaico.rivera@gmail.com>" [final]
+
+</pre>
+            </div>
 
 		</div>
 	</div>
