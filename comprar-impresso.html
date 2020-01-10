@@ -1,0 +1,71 @@
+<html>
+<head>
+	<title> ..:: Bio-Speckle Laser Tool Library ::..</title>
+	<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+  	<link href="data/base.css" media="screen" rel="stylesheet" type="text/css">
+	 <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <script type="text/javascript">
+
+	if(navigator.appName=='Microsoft Internet Explorer')
+	{
+		var str1=	'El navegador que usas no respeta los estándares\n'+
+				'de diseño web, muy probablemente estés usando\n'+
+				'Internet Explorer, por favor descarga un navegador\n'+
+				'web adecuado, como:\n'+
+				'Firefox, Chromium, Opera, etc.'
+		alert(str1);
+	}
+    </script>
+
+    <script src="data/jquery-3.4.1.min.js"></script> 
+
+    <script> 
+    $(function(){
+      $("#includedHeadContent").load("head.html"); 
+    });
+    </script> 
+
+    <script> 
+    $(function(){
+      $("#includedFootContent").load("foot.html"); 
+    });
+    </script> 
+
+</head>
+<body>
+
+<!----------------------------------------------------------------------------->
+	<div class="header gradient">
+        <div id="includedHeadContent" class="top-nav darkblock"> </div>
+
+        <img src="img/logo.svg.png" height="64"> <br>
+
+		<div class="promo-area"> 
+			<a name="books"></a>
+			<h2>Bibtex</h2>
+        	<p>
+				<ul>
+				<li> Download: 
+                    <a href="data/pujaico2020.bibtex">arquivo em formato bibtex</a>. 
+<pre>
+ @book{PUJAICO2020,
+    title={M\'etodos num\'ericos: Problemas n\~ao lineares e inversos},
+    author={Pujaico Rivera, Fernando},
+    isbn={XXX-XX-XXXX-XXX-X},
+    url={https://trucomanx.github.io/metodos.numericos/},
+    year={2020}
+ }
+</pre>
+                </li>
+				</ul>
+			</p> 
+
+
+		</div>
+	</div>
+
+<!----------------------------------------------------------------------------->
+    <div id="includedFootContent" class="content">    </div>
+
+</body>
+</html>
