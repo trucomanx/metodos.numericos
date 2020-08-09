@@ -50,24 +50,26 @@
             </div>
             <div style="float: right;width: 80.0%;">
 			<h2>GNU-Linux: Verificar a integridade e autenticidade do livro</h2>
-        	    <p>Baixe o arquivo <a href="data/metodos.numericos-1raed.sig">metodos.numericos-1raed.sig</a>,
+        	    <p>Baixe o arquivo <a href="data/GnuPG-Verificador.sig">GnuPG-Verificador.sig</a>,
                 de modo que este arquivo esteja na mesma pasta que o livro -
                 <b>Métodos numéricos: Problemas não lineares e inversos</b>, em formato PDF.
                 Com estes dois arquivos entre ao terminal e se posicione nessa pasta;
                 neste ponto você pode usar o programa <b>gpg</b> para verificar a integridade do arquivo do livro em formato PDF.</p>
-                <p> Por exemplo, se o livro tem o nome <b>livro-metodos.numericos.pdf</b>,
+                <p> Por exemplo, se o livro tem o nome <b>Metodos-Numericos-1raEd-Fernando-PR.pdf</b>,
                 então podemos verificar este arquivo PDF utilizando o seguinte comando:</p> 
 <pre>
 
- gpg --verify metodos.numericos-1raed.sig livro-metodos.numericos.pdf
+ gpg --verify GnuPG-Verificador.sig Metodos-Numericos-1raEd-Fernando-PR.pdf
 
 </pre>
+<hr/>
                 <p>Se o arquivo foi verificado com êxito, poderá observar uma mensagem similar a esta:</p> 
 <pre>
 
  gpg: Assinatura correta de "Fernando Pujaico Rivera (TrucomanX) <fernando.pujaico.rivera@gmail.com>" [final]
 
 </pre>
+<hr/>
                 <p>No caso contrário, observará algo similar a isto:</p> 
 <pre>
 
